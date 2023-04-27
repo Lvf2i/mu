@@ -54,7 +54,7 @@ async def start_(client: Client, message: Message, _):
            ],[
            InlineKeyboardButton(_["support_btn"], url=f"https://t.me/{GROUP}"),  
            ],[
-           InlineKeyboardButton(_["owner_btn"], url=f"tg://settings"),  
+           InlineKeyboardButton(_["owner_btn"], url=f"https://t.me/E_M_1"),  
 
            ]]
            )
@@ -79,7 +79,7 @@ async def alive(client: Client, message: Message, _):
 @language
 async def repo(client: Client, message: Message, _):
     source_keyboard = InlineKeyboardMarkup( [[
-           InlineKeyboardButton(_["source"], url="https://github.com/STKR2/all")
+           InlineKeyboardButton(_["source"], url="https://t.me/E_16_E")
            ]]
            ) 
     await message.reply_text(_["repo_btn"],reply_markup=source_keyboard) 
