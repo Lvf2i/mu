@@ -82,7 +82,7 @@ async def repo(client: Client, message: Message, _):
            InlineKeyboardButton(_["source"], url="https://t.me/E_16_E")
            ]]
            ) 
-    await message.reply_text("هلاوو",reply_markup=source_keyboard) 
+    await message.reply_text("سورس ريكو ✨",reply_markup=source_keyboard) 
 
 @Client.on_message(command("مساعدة") & filters.private & ~other_filters & ~filters.edited & ~BANNED_USERS) 
 @language
@@ -119,7 +119,7 @@ async def get_uptime(c: Client, message: Message, _):
            InlineKeyboardButton(_["close_btn"], callback_data="set_close")
            ]]
            ) 
-    await message.reply_text(_["uptime_btn"].format(uptime,user_mention,START_TIME_ISO),reply_markup=uptime_keyboard) 
+    await message.reply_text("المطور: @E_M_1".format(uptime,user_mention,START_TIME_ISO),reply_markup=uptime_keyboard) 
 
                  
 @Client.on_message(command("بنك") & filters.group & ~filters.edited)
