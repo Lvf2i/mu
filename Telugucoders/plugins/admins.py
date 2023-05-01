@@ -30,7 +30,7 @@ async def update_admin(client, message, _):
     await message.reply_text(_["reload_btn"].format(user_mention)) 
 
 
-@Client.on_message(command(["تخطي", f"سكب", "سكيب"]) & other_filters)
+@Client.on_message(command(["تخطي.", f"سكب", ".سكيب."]) & other_filters)
 @language
 async def skip(c: Client, m: Message, _):
     await m.delete()
@@ -84,7 +84,7 @@ async def skip(c: Client, m: Message, _):
 
 
 @Client.on_message(
-    command(["اوكف", f"كافي", "ايقاف", f"اسكت", "اصمت"])
+    command(["اوكف.", f"كافي", ".ايقاف.", f"اسكت", ".اصمت."])
     & other_filters
 )
 @language
@@ -102,7 +102,7 @@ async def stop(client, m: Message, _):
 
 
 @Client.on_message(
-    command(["مؤقت", f"/pause@{BOT_USERNAME}", "/vpause"]) & other_filters
+    command(["مؤقت.", f"/pause@{BOT_USERNAME}", "/vpause"]) & other_filters
 )
 @language
 async def pause(client, m: Message, _):
@@ -119,7 +119,7 @@ async def pause(client, m: Message, _):
 
 
 @Client.on_message(
-    command(["استمرار", f"/resume@{BOT_USERNAME}", "/vresume"]) & other_filters
+    command(["استمرار.", f"/resume@{BOT_USERNAME}", "/vresume"]) & other_filters
 )
 @language
 async def resume(client, m: Message, _):
