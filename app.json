@@ -1,9 +1,9 @@
 {
-    "name": "سورس فريدوم",
+    "name": "سورس ريكو",
     "logo": "https://te.legra.ph/file/f7e1acf9338cc453a87ad.jpg",
     "description": "An Advanced Premium Music Bot For Telegram Groups VC.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/STKR2/all",
+    "repository": "https://github.com/ali22001/mu",
     "stack": "container",
     "env": {
         "API_ID": {
@@ -21,7 +21,7 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "كود بايروجرام : لازم تستخرجة من موقع فريدوم https://replit.com/@freedomSource/Session-Generator#main.py",
+            "description": "كود بايروجرام
             "required": true
         },
         "BOT_USERNAME": {
@@ -30,17 +30,17 @@
         },
         "SUDO_USERS": {
             "description": "اكتب ايديات المطورين لاتنسى تحط مسافة بين كل ايدي كمثال",
-            "value": "1854384004 1854384004",
+            "value": "5148378105 5148378105",
             "required": true
         },
         "GROUP": {
             "description": "اكتب قناة البوت الثانية ، او اتركها كما هي",
-            "value": "xl444",
+            "value": "E_16_E",
             "required": true
         },
         "NETWORK": {
             "description": "اكتب قناة البوت ، او اتركها كما هي",
-           "value": "xl444",
+           "value": "E_16_E",
             "required": true
         },
         "MONGODB_URL": {
@@ -50,12 +50,12 @@
         },
         "BOT_NAME": {
             "description": "لاتغيرها ابدا",
-            "value": "muntazer",   
+            "value": "AllUSH",   
             "required": true
         },
         "OWNER_ID": {
             "description": "اكتب ايدي المالك ، او اتركها كما هي",
-            "value": "1854384004",
+            "value": "5148378105",
             "required": true 
         }
     },
