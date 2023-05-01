@@ -36,7 +36,7 @@ async def active_group_calls(c: Client, message: Message):
             text += f"**{j + 1}.** {title} [`{x}`]\n"
         j += 1
     if not text:
-        await message.reply_text("❌ no active group calls")
+        await message.reply_text("❌ لا توجد مكالمات جماعية نشطة")
     else:
         await message.reply_text(
             f"✏️ **Running Group Call List:**\n\n{text}\n❖ This is the list of all current active group call in my database.",
