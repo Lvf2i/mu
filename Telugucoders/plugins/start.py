@@ -75,7 +75,7 @@ async def alive(client: Client, message: Message, _):
            ) 
     await message.reply_text(_["alive_start"].format(user_mention),reply_markup=alive_keyboard)
 
-@Client.on_message(command(["السورس", "سورس"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["السورس", ".سورس."]) & filters.group & ~filters.edited)
 @language
 async def repo(client: Client, message: Message, _):
     source_keyboard = InlineKeyboardMarkup( [[
@@ -84,7 +84,7 @@ async def repo(client: Client, message: Message, _):
            ) 
     await message.reply_text("سورس ريكو ✨",reply_markup=source_keyboard) 
 
-@Client.on_message(command("مساعدة") & filters.private & ~other_filters & ~filters.edited & ~BANNED_USERS) 
+@Client.on_message(command("مساعدة.") & filters.private & ~other_filters & ~filters.edited & ~BANNED_USERS) 
 @language
 async def help(client: Client, message: Message, _):
     help_keyboard = InlineKeyboardMarkup( [[
@@ -99,7 +99,7 @@ async def help(client: Client, message: Message, _):
     await message.reply_text(_["help_button"],reply_markup=help_keyboard) 
 
 
-@Client.on_message(command("الاوامر") & filters.group & ~filters.edited) 
+@Client.on_message(command("الاوامر.") & filters.group & ~filters.edited) 
 @language
 async def ghelp(client: Client, message: Message, _):
     ghelp_keyboard = InlineKeyboardMarkup( [[
@@ -122,7 +122,7 @@ async def get_uptime(c: Client, message: Message, _):
     await message.reply_text("المطور: @E_M_1".format(uptime,user_mention,START_TIME_ISO),reply_markup=uptime_keyboard) 
 
                  
-@Client.on_message(command("بنك") & filters.group & ~filters.edited)
+@Client.on_message(command("بنك.") & filters.group & ~filters.edited)
 async def ping_pong(c: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("**جاري حساب البنك ..**")
