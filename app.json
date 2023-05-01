@@ -8,12 +8,12 @@
     "env": {
         "API_ID": {
             "description": "لاتغيرها ابدا",
-            "value": "8934899",
+            "value": "9558681",
             "required": true
         },
         "API_HASH": {
             "description": "لاتغيرها ابدا",
-            "value": "bf3e98d2c351e4ad06946b4897374a1e", 
+            "value": "d1ee3c95d5595767d1d902de13c2a69a", 
             "required": true
         },
         "BOT_TOKEN": {
@@ -30,7 +30,7 @@
         },
         "SUDO_USERS": {
             "description": "اكتب ايديات المطورين لاتنسى تحط مسافة بين كل ايدي كمثال",
-            "value": "5148378105 5148378105",
+            "value": "5148378105 5287499306",
             "required": true
         },
         "GROUP": {
