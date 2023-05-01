@@ -111,11 +111,7 @@ async def bot_statistic(c: Client, message: Message):
     served_chats = len(await get_served_chats()) 
     gbans_usertl = await get_gbans_count()
     tgm = f"""
-- احصائيات بوت الـ [{name}](https://t.me/{uname})`:`
- **- عدد الكروبات** : `{served_chats}`
- **- العام** : `{gbans_usertl}`
- **- النسخ** : `{pyver}`
- **- نسخة السورس** : `{pytgver.__version__}`
- **- نسخة بايروجرام** : `{pyrover}`
- **- نسخ البوت** : `{ver}`"""
+- احصائيات بوت الـ [{name}](https://t.me/{uname}):
+ - عدد الكروبات : {served_chats}
+ - نسخ البوت : {ver}"""
     await msg.edit(tgm, disable_web_page_preview=True)
