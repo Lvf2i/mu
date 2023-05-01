@@ -21,7 +21,7 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "كود بايروجرام
+            "description": "كود بايروجرام",
             "required": true
         },
         "BOT_USERNAME": {
